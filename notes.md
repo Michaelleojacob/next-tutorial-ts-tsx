@@ -40,3 +40,19 @@
 - styles becomes an object
 - to access that object:
 - `className={styles.container}`
+
+## global css
+
+```tsx
+// pages/_app.tsx
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
+}
+
+export default MyApp;
+```
+
+- any css rules in `/styles/globals.css` are now global
