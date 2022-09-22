@@ -12,6 +12,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
+        <h2>Home Page</h2>
         <Link href="/posts/first-post">first post</Link>
       </div>
     </div>
